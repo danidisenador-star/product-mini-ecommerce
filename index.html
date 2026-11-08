@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KOZ Cosmetics · Cosméticos y skincare que sí te cumplen</title>
+  <meta name="description" content="Arma tu rutina facial en segundos y pide por WhatsApp.">
+  <meta name="theme-color" content="#c9a227">
+  <!-- 👉 TIPOGRAFÍA: cambia la fuente aquí (fonts.google.com) y el nombre en css/styles.css (--font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- ÍCONOS (no tocar) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.4l2.1 10.2a1.6 1.6 0 0 0 1.6 1.3h8a1.6 1.6 0 0 0 1.6-1.2L20.4 8H6.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19.2" r="1.3" fill="currentColor"/><circle cx="16.5" cy="19.2" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5-9-5.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-360" viewBox="0 0 24 24"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Zm0 0v9m0 0 8-4.5M12 12 4 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-gyro" viewBox="0 0 24 24"><rect x="3.2" y="8.4" width="17.6" height="7.6" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7.2 5.6a8.2 8.2 0 0 1 9.6 0M16.8 18.4a8.2 8.2 0 0 1-9.6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-swipe" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z" fill="currentColor"/><path d="m16 9.5 5 5m0-5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="22.8" cy="9.2" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 32 32"><path d="M18.5 4v15.2a4.7 4.7 0 1 1-4.7-4.7M18.5 4c.3 3.2 2.6 5.5 6 5.7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ============================ HEADER ============================ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#inicio" aria-label="KOZ Cosmetics, inicio">
+    <!-- 👉 LOGO: reemplaza el <span> por <img src="assets/img/logo.svg" alt="KOZ"> -->
+    <span class="brand__mark">KZ</span>
+    <span class="brand__name" data-brand>KOZ Cosmetics</span>
+  </a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#productos">Productos</a><a href="#tutoriales">Tutoriales</a><a href="#rutina">Tu rutina</a><a href="#contacto">Contacto</a>
+  </nav>
+  <!-- Este botón cambia solo: "Agenda tu cita" ↔ "Consultar + contador del carrito" -->
+  <a class="btn-cta" id="navCta" href="#" target="_blank" rel="noopener">
+    <span id="navCtaLabel">Agenda tu cita</span>
+    <svg class="ic"><use href="#i-arrow"/></svg>
+    <span class="btn-cta__cart" id="navCart" hidden><svg class="ic"><use href="#i-cart"/></svg><b id="navCount">0</b></span>
+  </a>
+</header>
+
+<main id="inicio">
+
+<!-- ============================ HERO: VIDEO → VISTA 3D ============================ -->
+<section class="hero hero--intro" id="hero" aria-label="Presentación y vista 3D de productos">
+  <div class="hero__media">
+    <img class="hero__poster" id="heroPoster" alt="">
+    <video class="hero__video" id="heroVideo" muted loop playsinline preload="metadata" hidden></video>
+    <div class="hero__shade"></div>
+  </div>
+  <!-- Velo: cubre el video con el color del producto ANTES de mostrar el 3D, así no se nota el recorte -->
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <!-- Texto de portada (se oculta al entrar a la vista 3D) -->
+  <div class="hero__text" id="heroText">
+    <!-- BOTÓN 3D (encima del título) -->
+    <button class="hero__start" id="heroStart" type="button">
+        <span class="hero__start-ic"><svg class="ic"><use href="#i-360"/></svg></span>
+        <span class="hero__start-txt"><b>Visualiza los productos en 3D</b><small id="startHint">Desliza tus dedos</small></span>
+      </button>
+    <h1 class="hero__title">Cosméticos y skincare que sí te cumplen</h1>
+    <p class="hero__sub">Crea una rutina personalizada, según tus necesidades en 5 segundos.</p>
+    <a class="hero__routine" href="#rutina" id="heroRoutine">Iniciar rutina <svg class="ic"><use href="#i-next"/></svg></a>
+  </div>
+
+  <!-- Visor 3D falso (sprite sheet de 6 vistas) -->
+  <div class="v3d" id="v3d" hidden>
+    <div class="v3d__stage" id="v3dStage" aria-label="Arrastra para girar el producto">
+      <div class="v3d__img" id="v3dImg"></div>
+      <!-- Avisito de cómo girar (el texto lo elige main.js según móvil / web / giroscopio) -->
+      <div class="v3d__hint" id="v3dHint" role="status"><svg class="ic"><use href="#i-swipe"/></svg><span id="v3dHintText"></span></div>
+    </div>
+    <div class="v3d__info"><b id="v3dBrand"></b><span id="v3dName"></span><p class="v3d__desc" id="v3dDesc"></p></div>
+  </div>
+
+  <div class="hero__bar">
+    <button class="pill pill--light" id="v3dNext" type="button" hidden><span>Siguiente: <b id="v3dNextName"></b></span><svg class="ic"><use href="#i-next"/></svg></button>
+    <button class="pill pill--light" id="v3dBack" type="button" hidden>Volver</button>
+    <button class="pill pill--light" id="v3dGyro" type="button" hidden><svg class="ic"><use href="#i-gyro"/></svg><span id="gyroText">Giroscopio</span></button>
+    <button class="round" id="heroFull" type="button" aria-label="Pantalla completa" hidden><svg class="ic"><use href="#i-expand"/></svg></button>
+  </div>
+</section>
+
+<!-- ============================ PRODUCTOS ============================ -->
+<section class="products" id="productos">
+  <header class="sec-head reveal">
+    <p class="eyebrow"><span></span>Cuidado que se adapta a ti</p>
+    <h2 class="title">¿Qué necesita tu piel hoy?</h2>
+    <p class="hint">Elige un producto y consúltalo por WhatsApp.</p>
+  </header>
+  <div class="cards" id="cards"><!-- se generan desde js/config.js --></div>
+  <button class="btn-dark products__catalog" id="catalogBtn" type="button"><span id="catalogLabel">Ver el catálogo completo</span><svg class="ic"><use href="#i-chat"/></svg></button>
+</section>
+
+<!-- ============================ TODO LO QUE BUSCAS + BUSCADOR ============================ -->
+<section class="find" id="buscador">
+  <div class="find__banner">
+    <div class="find__txt reveal">
+      <p class="eyebrow eyebrow--light"><span></span>Productos de primera calidad</p>
+      <h2 class="find__title">Tenemos todo lo que buscas</h2>
+      <p class="find__sub">Pregunta por el producto y su disponibilidad.</p>
+    </div>
+    <!-- 👉 IMAGEN PNG del banner: assets/img/tarro.png (PNG con fondo transparente; el borde de abajo queda escondido detrás del buscador) -->
+    <img class="find__img reveal" src="assets/img/tarro.png" alt="Producto destacado" loading="lazy">
+  </div>
+
+  <div class="find__box reveal">
+    <form class="search" id="searchForm" autocomplete="off">
+      <svg class="ic search__ic"><use href="#i-search"/></svg>
+      <input id="searchInput" type="text" placeholder="Buscar producto o preguntas frecuentes…" aria-label="Buscar producto, problema o pregunta frecuente">
+      <button class="search__btn" id="searchBtn" type="submit">Buscar</button>
+    </form>
+    <div class="chat" id="chat" aria-live="polite"><div class="chips" id="chips"></div></div>
+  </div>
+</section>
+
+<!-- ============================ TUTORIALES Y TIPS ============================ -->
+<section class="tips" id="tutoriales">
+  <h2 class="tips__title reveal">Tutoriales y Tips</h2>
+  <p class="tips__sub reveal">Mira cómo nuestros productos mejoran la piel y el bienestar de nuestros clientes<span class="only-touch"> (haz clic para ver)</span></p>
+  <div class="tips__row" id="tipsRow"></div>
+</section>
+
+<!-- ============================ ARMA TU RUTINA ============================ -->
+<section class="routine" id="rutina" data-step="0">
+  <!-- PASO 0: portada -->
+  <div class="routine__pane routine__pane--0">
+    <div class="routine__intro reveal">
+      <p class="eyebrow eyebrow--light"><span></span>Somos mucho más que productos</p>
+      <h2 class="routine__title">Arma tu rutina facial en segundos</h2>
+      <button class="btn-glass" id="rStart" type="button">Comenzar <svg class="ic"><use href="#i-next"/></svg></button>
+    </div>
+    <!-- 👉 PNG de productos de la marca -->
+    <div class="routine__pngs reveal"><img src="assets/img/Pack.png" alt="Productos OWYA" loading="lazy"></div>
+  </div>
+
+  <!-- PASO 1: elegir problemas -->
+  <div class="routine__pane routine__pane--1">
+    <p class="eyebrow eyebrow--light"><span></span>Selecciona las opciones necesarias</p>
+    <h2 class="routine__big">¿Qué necesidades tiene tu piel justo ahora?</h2>
+    <div class="opts" id="opts"></div>
+    <div class="routine__actions"><button class="btn-ghost" id="rBack1" type="button">Volver</button><button class="btn-glass btn-glass--solid" id="rGo" type="button">Seguir</button></div>
+  </div>
+
+  <!-- PASO 2: resultado -->
+  <div class="routine__pane routine__pane--2">
+    <p class="eyebrow eyebrow--light"><span></span>Tu rutina está lista</p>
+    <h2 class="routine__big">Estos son los productos ideales para ti</h2>
+    <div class="tl" id="timeline"></div>
+    <div class="routine__actions routine__actions--end">
+      <button class="btn-ghost" id="rBack2" type="button">← Volver</button>
+      <a class="btn-glass btn-glass--solid" id="rOrder" href="#" target="_blank" rel="noopener">Pedir mi rutina</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VEN A NUESTRA TIENDA + CONTACTO ============================ -->
+<section class="visit" id="contacto">
+  <!-- 👉 Imagen de fondo del banner: assets/img/tienda.svg -->
+  <div class="visit__banner reveal"><p class="visit__small">El siguiente paso es cuidarte, en nuestra tienda</p><h2>Ven a nuestra tienda</h2></div>
+  <div class="visit__body reveal">
+    <a class="btn-light" id="mapBtn" href="#" target="_blank" rel="noopener"><span>Ubicación (Google Maps)</span><svg class="ic"><use href="#i-pin"/></svg></a>
+    <a class="btn-dark" id="advisorBtn" href="#" target="_blank" rel="noopener"><span>Hablar con un asesor <b>GRATIS</b></span></a>
+    <p class="visit__note">Cuéntanos qué necesitas. Te ayudamos a elegir el producto ideal y te asesoramos por WhatsApp.</p>
+  </div>
+  <ul class="social" id="social"></ul>
+</section>
+</main>
+
+<footer class="foot"><span class="brand__mark">KZ</span><b data-brand>KOZ Cosmetics</b></footer>
+
+<!-- Visor vertical tipo TikTok (móvil) -->
+<div class="feed" id="feed" hidden role="dialog" aria-label="Videos">
+  <button class="feed__close" id="feedClose" type="button" aria-label="Cerrar"><svg class="ic"><use href="#i-close"/></svg></button>
+  <button class="feed__sound" id="feedSound" type="button"><svg class="ic"><use href="#i-mute"/></svg><span id="feedSoundText">Activar sonido</span></button>
+  <div class="feed__hint" id="feedHint">Desliza hacia abajo</div>
+  <div class="feed__scroll" id="feedScroll"></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
